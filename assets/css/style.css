@@ -21,7 +21,10 @@ body{
     box-sizing: border-box;
     background-color: #f4f4f4;
     font-family: var(--default-font) !important;
+    min-height: 100vh;
 }
+
+
 
 h1,
 h2,
@@ -75,6 +78,10 @@ h6 {
   color: white;
 }
 
+.content{
+    flex: 1;
+}
+
 
 /* Navbar */
 .navbar{
@@ -98,7 +105,7 @@ h6 {
 
 .project-card{
     background: #fff;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px !important;
@@ -147,6 +154,17 @@ h6 {
     border: 0;
     padding: 10px 30px;
     transition: 0.4s;
+}
+
+
+/* Footer */
+footer {
+    color: var(--default-color);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
 }
 
 /* RESPONSIVENESS */
