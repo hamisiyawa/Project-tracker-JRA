@@ -11,9 +11,9 @@
 
     
     <!-- Navbar -->
-    <nav class="navbar navbar-dark p-3">
+    <nav class="navbar navbar-dark p-2">
         <div class="container d-flex justify-content-space-between align-items-center">
-            <a class="navbar-brand" href="index.html">Dashboard</a>
+            <a class="navbar-brand" href="index.html">JRA Dashboard</a>
 
             <div class="dropdown profileDropdown pt-3">
                 <p class="text-light dropdown-toggle"  id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -26,7 +26,7 @@
         </div>  
     </nav>
 
-    <div class="container my-4">
+    <div class="container my-4 content">
         <!-- Tabs Navigation -->
         <ul class="nav nav-tabs" id="dashboardTabs">
             <li class="nav-item">
@@ -46,12 +46,39 @@
             <!-- My Projects Section -->
             <div class="tab-pane fade show active" id="projects">
                 
-                <h2>Ongoing Projects</h2>
+                <h2>All Projects</h2>
+                <div class="row g-2 mb-3">
+                    <div class="col-12 col-md-5">
+                        <div class="input-group input-group-sm search">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <button class="btn btn-secondary" type="button">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <select class="form-select form-select-sm filter">
+                            <option>Filter by status</option>
+                            <option>Started</option>
+                            <option>In Progress</option>
+                            <option>Complete</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="create-project-btn">
+                            <button class="btn buttons btn-sm w-100 create-btn" data-bs-toggle="modal" data-bs-target="#createProjectModal">+ Create Project</button>
+                        </div>
+                        
+                    </div>
+                </div>
                 <div class="card project-card">
                     <div class="card-body">
                         <h5>Website Development</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi dolorum optio voluptatem unde, doloremque iste laboriosam doloribus voluptas magnam quae, fugiat asperiores consequatur consequuntur veritatis suscipit sunt molestias quod?</p>
                         <p class="status">In Progress</p>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary py-2 px-3 my-2">Update</button>
+                            <button class="btn btn-sm btn-danger py-2 px-3 my-2">Delete</button>
+                            <button class="btn btn-sm btn-secondary py-2 px-3 my-2">Details</button>
+                        </div>
                     </div>
                 </div>
 
@@ -60,6 +87,11 @@
                         <h5>Website Development</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi dolorum optio voluptatem unde, doloremque iste laboriosam doloribus voluptas magnam quae, fugiat asperiores consequatur consequuntur veritatis suscipit sunt molestias quod?</p>
                         <p class="status">In Progress</p>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary py-2 px-3 my-2">Update</button>
+                            <button class="btn btn-sm btn-danger py-2 px-3 my-2">Delete</button>
+                            <button class="btn btn-sm btn-secondary py-2 px-3 my-2">Details</button>
+                        </div>
                     </div>
                 </div>
 
@@ -68,9 +100,15 @@
                         <h5>Website Development</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi dolorum optio voluptatem unde, doloremque iste laboriosam doloribus voluptas magnam quae, fugiat asperiores consequatur consequuntur veritatis suscipit sunt molestias quod?</p>
                         <p class="status">In Progress</p>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary py-2 px-3 my-2">Update</button>
+                            <button class="btn btn-sm btn-danger py-2 px-3 my-2">Delete</button>
+                            <button class="btn btn-sm btn-secondary py-2 px-3 my-2">Details</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            
 
             <!-- Messages Section -->
             <div class="tab-pane fade" id="messages">
@@ -110,6 +148,35 @@
                 <h3 class="mt-5">Client Reviews</h3>
                 <ul id="reviewsList" class="list-group mt-3"></ul>
             </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Joe tech data analysis and reserch consultancy. All Rights Reserved.
+    </footer>
+
+        <!-- Create Project Modal -->
+    <div class="modal fade" id="createProjectModal" tabindex="-1" aria-labelledby="createProjectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow-sm rounded-4">
+            <div class="modal-header Project-modal-header text-white">
+            <h5 class="modal-title" id="createProjectModalLabel">Add New Project</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="add-project">
+                <div class="mb-3">
+                <input type="text" class="form-control" id="projectTitle" placeholder="Enter project title" required>
+                </div>
+                <div class="mb-3">
+                <textarea class="form-control" id="projectDescription" rows="4" placeholder="Enter project description" required></textarea>
+                </div>
+                <div class="text-end">
+                <button type="submit" class="btn buttons create-btn w-100">Add Project</button>
+                </div>
+            </form>
+            </div>
+        </div>
         </div>
     </div>
 

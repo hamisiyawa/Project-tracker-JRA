@@ -21,7 +21,10 @@ body{
     box-sizing: border-box;
     background-color: #f4f4f4;
     font-family: var(--default-font) !important;
+    min-height: 100vh;
 }
+
+
 
 h1,
 h2,
@@ -75,6 +78,19 @@ h6 {
   color: white;
 }
 
+.content{
+    flex: 1;
+}
+
+/* modals */
+.Project-modal-header{
+    background-color: var(--color-accent) !important;
+}
+
+.Project-modal-header h5{
+    color: white !important;
+}
+
 
 /* Navbar */
 .navbar{
@@ -96,9 +112,43 @@ h6 {
 
 /* Projects section */
 
+.search{
+    width: 80%;
+}
+
+.search input[type=text],
+.filter,
+.add-project input[type=text],
+.add-project textarea{
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 0;
+    box-shadow: none !important;
+    color: var(--default-color);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important;
+}
+
+.search input[type=text]:focus,
+.filter:focus,
+.add-project input[type=text]:focus,
+.add-project textarea:focus
+{
+    border-color: var(--color-accent) !important;
+}
+
+.create-project-btn{
+    width: 80%;
+    text-align: right;
+}
+
+.create-btn{
+    border: 0;
+    padding: 10px 30px;
+}
+
 .project-card{
     background: #fff;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px !important;
@@ -149,9 +199,39 @@ h6 {
     transition: 0.4s;
 }
 
+
+/* Footer */
+footer {
+    color: var(--default-color);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
 /* RESPONSIVENESS */
 @media (max-width: 500px){
     .login-register{
         width: 90%;
     }
+
+    .search{
+        width: 100%;
+    }
+    
+
+    .create-project-btn{
+        width: 100%;
+    }
+
+    .social-container{
+        display: block !important;
+    }
+     
+    .social-container button{
+       width: 100%;
+       margin: 5px 0;
+    }
+
 }
