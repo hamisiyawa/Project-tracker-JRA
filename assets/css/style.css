@@ -82,10 +82,7 @@ h6 {
     flex: 1;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4381f4556620f8da3e050fd25b3173aba38ab299
+
 /* modals */
 .Project-modal-header{
     background-color: var(--color-accent) !important;
@@ -95,11 +92,7 @@ h6 {
     color: white !important;
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 448a94b4f0dc3ae17ae29435e7e60a60b4c7dc4a
->>>>>>> 4381f4556620f8da3e050fd25b3173aba38ab299
+
 
 /* Navbar */
 .navbar{
@@ -126,19 +119,13 @@ h6 {
 }
 
 .search input[type=text],
-<<<<<<< HEAD
+
+.filter,
+.add-project input[type=text],
+.add-project textarea,
 .filter,
 .add-project input[type=text],
 .add-project textarea{
-=======
-<<<<<<< HEAD
-.filter,
-.add-project input[type=text],
-.add-project textarea{
-=======
-.filter{
->>>>>>> 448a94b4f0dc3ae17ae29435e7e60a60b4c7dc4a
->>>>>>> 4381f4556620f8da3e050fd25b3173aba38ab299
     font-size: 14px;
     padding: 10px 15px;
     border-radius: 0;
@@ -148,20 +135,11 @@ h6 {
 }
 
 .search input[type=text]:focus,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4381f4556620f8da3e050fd25b3173aba38ab299
+
 .filter:focus,
 .add-project input[type=text]:focus,
 .add-project textarea:focus
 {
-<<<<<<< HEAD
-=======
-=======
-.filter:focus{
->>>>>>> 448a94b4f0dc3ae17ae29435e7e60a60b4c7dc4a
->>>>>>> 4381f4556620f8da3e050fd25b3173aba38ab299
     border-color: var(--color-accent) !important;
 }
 
@@ -253,10 +231,7 @@ footer {
     .create-project-btn{
         width: 100%;
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4381f4556620f8da3e050fd25b3173aba38ab299
+
 
     .social-container{
         display: block !important;
@@ -266,10 +241,4 @@ footer {
        width: 100%;
        margin: 5px 0;
     }
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 448a94b4f0dc3ae17ae29435e7e60a60b4c7dc4a
->>>>>>> 4381f4556620f8da3e050fd25b3173aba38ab299
 }
